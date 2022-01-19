@@ -1,0 +1,269 @@
+html {
+    font-size: 100%;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    opacity: 0.5;
+}
+.Sp {
+    display: none;
+}
+.Nav_En {
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+.Nav_Ja {
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+
+/* Header */
+
+#HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+}
+#Header_Logo_Pc {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+#Header_Nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+#Header_Logo_Pc {
+    height: 20px;
+    width: auto;
+}
+#Header_Nav ul {
+    display: flex;
+    text-align: center;
+}
+#Header_Nav li {
+    margin-right: 40px;
+}
+#Header_Nav li:last-child {
+    margin-right: 0;
+}
+#Header_Buttom {
+    background-color: orange;
+    color: white;
+    border-radius: 40px;
+    
+    line-height: 0px;
+    font-size: 0.78rem;
+    padding: 15px 20px;
+}
+
+
+/* Top_Menu */
+
+#Top_Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 100px;
+}
+#Mainvisual_Pc {
+    height: 600px;
+    vertical-align: top;
+    object-fit: cover;
+}
+#Top_Content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 480px;
+}
+#Top_Content_Imgs {
+    margin-bottom: 20px;
+}
+#Top_Content_Imgs img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+#Top_Content_Buttons {
+    display: flex;
+    margin-bottom: 60px;
+}
+#Counsering_Buttom {
+    background-color: orange;
+    color: white;
+    width: 300px;
+    height: 60px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 60px;
+}
+#Counsering_Buttom a {
+    color: white;
+    font-weight: bold;
+}
+#Document_Request_Buttom {
+    width: 200px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 40px;
+    border: 0.1rem solid gray;
+}
+#Top_Content_Caution {
+    font-size: 0.5rem;
+    color: gray;
+    max-width: 1000px;
+}
+
+
+/* About_Potepan */
+
+#About_Potepan {
+    display: flex;
+    max-width: 100%;
+    height: 250px;
+    background-color: orange;
+}
+#About_Content {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+#About_Content h2 {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: baseline;
+    margin: 40px 0 20px 0;
+}
+#About_Title {
+    font-size: 2.5rem;
+}
+#About_Content p {
+    color: white;
+}
+#About_Buttom_Container {
+    text-align: center;
+    margin: 110px auto 110px 0;
+}
+#About_Buttom  {
+    background-color: white;
+    height: 60px;
+    width: 250px;
+    border-radius: 40px;
+    padding-top: 10px;
+}
+#About_Buttom a {
+    color: orange;
+    line-height: 1px;
+}
+#About_Buttom_En {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#About_Buttom_Ja {
+    font-size: 0.8rem;
+}
+
+
+/* sp */
+
+@media screen and (max-width: 767px) {
+    .Pc {
+        display: none;
+    }
+    .Sp {
+        display: block;
+    }
+
+    /* Header_Sp */
+    #HeaderLogo_Sp {
+        margin: 10px 0 10px 20px;
+        height: 20px;
+    }
+
+    /* Top_Menu */
+    #Mainvisual_Sp {
+        padding-bottom: 300px;
+    }
+    #Top_Container {
+        max-width: 100%;
+        padding: 10px;
+        top: 0;
+        left: auto;
+        right: auto;
+    }
+    #Top_Content {
+        margin-top: 70vw;
+        width: auto;
+    }
+    #Top_Content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+    #Top_Content_Imgs {
+        display: flex;
+    }
+    #Top_Content_Imgs img:nth-child(1) {
+        width: 30%;
+    }
+    #Top_Content_Imgs img:nth-child(2) {
+        width: 40%;
+    }
+    #Top_Content_Imgs img:nth-child(3) {
+        width: 30%;
+    }
+    #Top_Content_Buttons {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #Counsering_Buttom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #Document_Request_Buttom {
+        width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width: 1024px) {
+
+    #Header_Nav {
+        visibility: hidden;
+    }
+
+     /* About_Potepan */
+     #About_Potepan {
+        flex-direction: column;
+        height: auto;
+    }
+    #About_Content {
+        margin: 0 0;
+        width: auto;
+        padding: 0 20px;
+    }
+    #About_Content h2 {
+        display: block;
+        text-align: center;
+    }
+    #About_Buttom_Container {
+        margin: 30px auto;
+    }
+}
