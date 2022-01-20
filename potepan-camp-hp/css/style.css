@@ -66,6 +66,9 @@ a:hover {
     font-size: 0.78rem;
     padding: 15px 20px;
 }
+#Humberger {
+    display: none;
+}
 
 
 /* Top_Menu */
@@ -247,6 +250,41 @@ a:hover {
 
     #Header_Nav {
         visibility: hidden;
+    }
+
+    /* Humberger */
+
+    #Humberger {
+        position: absolute;
+        height: 20px;
+        width: 28px;
+        display: inline-block;
+        box-sizing: border-box;
+        right: 40px;
+        top: 15px;
+    }
+    #Humberger div {
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 28px;
+        background-color: #444;
+        border-radius: 2px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    #Humberger div:nth-of-type(1) {
+        bottom: 20px;
+    }
+    #Humberger div:nth-of-type(2) {
+        bottom: 10px;
+    }
+    #Humberger div:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    #Mainvisual_Pc {
+        margin-top: 50px;
     }
 
      /* About_Potepan */
